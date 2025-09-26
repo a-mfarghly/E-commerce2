@@ -304,5 +304,7 @@ export const api = {
   processPayment: async (paymentData: any): Promise<{ success: boolean; transactionId?: string; error?: string }> => {
     return paymentService.processPayment(paymentData);
   }
-
 };
+
+// ✅ Export types so you can import them elsewhere
+export type { Product, Category, Brand, User };
